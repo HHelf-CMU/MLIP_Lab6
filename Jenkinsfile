@@ -16,12 +16,12 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # TODO fill out the path to conda here
-                conda init
+                sudo home/hhelf/miniconda3 init
 
                 echo 'Step2'
 
                 # TODO Complete the command to run pytest
-                conda run -n mlip pytest
+                sudo home/hhelf/miniconda3 run -n envs/mlip pytest
 
                 echo 'pytest not runned'
                 exit 1 #comment this line after implementing Jenkinsfile
